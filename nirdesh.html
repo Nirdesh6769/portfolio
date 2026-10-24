@@ -1,0 +1,567 @@
+<html>
+        <head><title>Downloaded HTML</title></head>
+        <body>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#061b19">
+<meta name="description" content="Nirdesh Lamichhane, known as ft.nirdesh. Minecraft server owner, content creator, gamer and web developer.">
+<title>ft.nirdesh | Official Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #f4f4ff;
+  font-family: 'Space Grotesk', sans-serif;
+  background: radial-gradient(ellipse at center, #063324, #041b19 65%, #030d15);
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent 0 65px,
+    #18ff5c0b 66px 68px
+  );
+}
+
+.matrix {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  overflow: hidden;
+  opacity: .23;
+  color: #30ff62;
+  font: bold 30px/1.6 monospace;
+  text-shadow: 0 0 12px #30ff62;
+}
+
+.matrix span {
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+
+.wrap {
+  width: min(1000px, 92%);
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 25px 0;
+}
+
+.logo {
+  font: 13px 'Press Start 2P';
+  color: #ffd43b;
+  text-shadow: 3px 3px #715200;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #b4c0e7;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 35px 0 75px;
+}
+
+.frame {
+  width: min(350px, 80vw);
+  aspect-ratio: 1;
+  margin: 20px auto 45px;
+  padding: 12px;
+  background: #151d3b;
+  border: 8px solid #ffd43b;
+  box-shadow: 9px 9px #38e8d2, 17px 17px #050d16;
+  position: relative;
+}
+
+.avatar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: linear-gradient(145deg, #234e4c, #192348, #47275f);
+  border: 5px solid #080d20;
+}
+
+.avatar .emoji {
+  font-size: 100px;
+}
+
+.avatar small {
+  font: 10px/2 'Press Start 2P';
+  color: #38e8d2;
+}
+
+.dev {
+  position: absolute;
+  right: -25px;
+  bottom: -25px;
+  background: #ff4057;
+  padding: 17px;
+  font: 10px 'Press Start 2P';
+  border: 3px solid #101735;
+  box-shadow: 5px 5px #090c18;
+}
+
+.nameplate {
+  display: inline-block;
+  max-width: 100%;
+  background: #8650d5;
+  border: 6px solid #05080e;
+  box-shadow: 0 0 0 4px #302056, 7px 7px #0b0d20;
+  padding: 16px 12px;
+  color: white;
+  font: clamp(17px, 4vw, 34px) 'Press Start 2P';
+  overflow-wrap: anywhere;
+}
+
+.handle {
+  display: table;
+  margin: 25px auto;
+  padding: 14px;
+  border: 3px solid #38e8d2;
+  background: #151d3b;
+  color: #38e8d2;
+  font: 10px 'Press Start 2P';
+  letter-spacing: 2px;
+  box-shadow: 5px 5px #26335b;
+}
+
+.intro {
+  font-size: clamp(19px, 4vw, 30px);
+  line-height: 1.6;
+  color: #aab5dc;
+}
+
+.intro strong {
+  color: #fff;
+}
+
+.buttons,
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 17px 15px;
+  background: #ffd43b;
+  color: #14172b;
+  border: 4px solid #080b13;
+  box-shadow: 5px 5px #715400;
+  text-decoration: none;
+  font: 9px/1.8 'Press Start 2P';
+  text-align: center;
+  transition: transform .2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn.blue {
+  background: #151d3b;
+  color: #fff;
+  box-shadow: 5px 5px #303a67;
+}
+
+.btn.youtube {
+  background: #ff3040;
+  color: white;
+  box-shadow: 5px 5px #811c2a;
+}
+
+.btn.discord {
+  background: #7655e8;
+  color: white;
+  box-shadow: 5px 5px #39257b;
+}
+
+.btn.drawnmc {
+  background: #38e8d2;
+  color: #10172c;
+  box-shadow: 5px 5px #176e69;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.section-title {
+  font: clamp(17px, 3vw, 24px)/1.8 'Press Start 2P';
+  color: #ffd43b;
+  text-shadow: 3px 3px #725300;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: #151d3b;
+  border: 5px solid #38e8d2;
+  box-shadow: 6px 6px #0a1428;
+  padding: 26px;
+}
+
+.card:nth-child(2) {
+  border-color: #384777;
+}
+
+.card h3 {
+  font-size: 25px;
+  margin: 0 0 12px;
+}
+
+.card p {
+  font-size: 19px;
+  line-height: 1.7;
+  color: #aab5dc;
+}
+
+.number {
+  font: 40px 'Press Start 2P';
+  color: #38e8d2;
+  margin-bottom: 25px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+  background: #30365b;
+  padding: 7px;
+}
+
+.skill {
+  background: #151d3b;
+  text-align: center;
+  padding: 18px 5px;
+  min-height: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+}
+
+.skill b {
+  font-size: 35px;
+}
+
+.skill span {
+  font: 8px/2 'Press Start 2P';
+  overflow-wrap: anywhere;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.aboutbox {
+  background: #151d3b;
+  padding: 20px;
+  border: 4px solid #8650d5;
+  box-shadow: 4px 4px #102342;
+  overflow-wrap: anywhere;
+}
+
+.aboutbox span {
+  display: block;
+  color: #aab5dc;
+  margin-bottom: 8px;
+}
+
+.aboutbox strong {
+  font-size: 22px;
+}
+
+.social-intro {
+  color: #aab5dc;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+footer {
+  text-align: center;
+  padding: 45px 10px;
+  border-top: 2px solid #384777;
+  color: #aab5dc;
+  font: 9px/2.4 'Press Start 2P';
+}
+
+@media (min-width: 700px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .skills {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 10px;
+  }
+
+  nav {
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .nameplate {
+    font-size: 17px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="matrix" aria-hidden="true">
+  <span>01 ϟ 3 ₿ 8 E 7 ᚷ 1 0 4 ϟ</span>
+  <span>ᚷ ϟ 0 8 3 E 1 ₿ 7 4 ᚷ</span>
+  <span>3 7 ϟ 01 ᚷ 8 E 4 0 ₿ 1</span>
+  <span>₿ ᚷ 4 8 ϟ 0 3 E 7 4</span>
+  <span>1 E 3 ϟ 8 4 ᚷ 0 7 ₿</span>
+  <span>ᚷ 3 0 ϟ E 8 4 1 7 0</span>
+  <span>7 ϟ ᚷ 3 1 E 8 0 4</span>
+  <span>₿ 1 ᚷ 8 ϟ 3 E 0 7</span>
+</div>
+
+<header class="wrap">
+  <a class="logo" href="#home">FT.NIRDESH</a>
+  <nav>
+    <a href="#work">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="wrap hero" id="home">
+  <div class="frame">
+    <div class="avatar">
+      <div class="emoji">⛏️</div>
+      <small>MINECRAFT<br>CREATOR</small>
+    </div>
+    <div class="dev">CREATOR</div>
+  </div>
+
+  <div class="nameplate">NIRDESH +</div>
+  <div class="handle">@FT.NIRDESH</div>
+
+  <p class="intro">
+    I build Minecraft experiences and online communities.<br>
+    <strong>Server Owner, Creator, Gamer & Developer.</strong>
+  </p>
+
+  <div class="buttons">
+    <a class="btn" href="#work">SEE WHAT I RUN</a>
+    <a class="btn blue" href="#about">ABOUT ME</a>
+    <a class="btn discord" href="https://discord.gg/waUqtQZUGD" target="_blank" rel="noopener noreferrer">MY DISCORD</a>
+  </div>
+</section>
+
+<section class="wrap" id="work">
+  <h2 class="section-title">WHAT I OWN</h2>
+
+  <div class="cards">
+
+    <article class="card">
+      <div class="number">01</div>
+      <h3>DrawnMC</h3>
+      <p>
+        My Minecraft server project. I work on server management,
+        plugin configuration, and creating an enjoyable multiplayer experience.
+      </p>
+
+      <div class="buttons">
+        <a class="btn" href="https://drawnmc.vercel.app/" target="_blank" rel="noopener noreferrer">WEBSITE ↗</a>
+        <a class="btn drawnmc" href="https://discord.gg/snEZP7jxxT" target="_blank" rel="noopener noreferrer">DRAWNMC DISCORD</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <h3>Content Creation</h3>
+      <p>
+        Gaming and creator content are part of my online identity.
+        Follow my YouTube channel to see my content.
+      </p>
+      <a class="btn youtube" href="https://youtube.com/@nirdesh2255?si=RVOh4XCo_ufKnyMd" target="_blank" rel="noopener noreferrer">VISIT MY YOUTUBE ↗</a>
+    </article>
+
+    <article class="card">
+      <h3>Web Development</h3>
+      <p>
+        I enjoy building websites and improving the online presence
+        of my projects and communities.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+<section class="wrap" id="skills">
+  <h2 class="section-title">SKILLS</h2>
+
+  <div class="skills">
+    <div class="skill"><b>⛏️</b><span>MINECRAFT SERVER</span></div>
+    <div class="skill"><b>⚙️</b><span>PLUGIN CONFIG</span></div>
+    <div class="skill"><b>🎬</b><span>VIDEO EDITING</span></div>
+    <div class="skill"><b>🌐</b><span>WEB DEVELOPMENT</span></div>
+    <div class="skill"><b>💬</b><span>DISCORD</span></div>
+  </div>
+</section>
+
+<section class="wrap" id="about">
+  <h2 class="section-title">ABOUT</h2>
+
+  <div class="about">
+    <div class="aboutbox">
+      <span>Name</span>
+      <strong>Nirdesh Lamichhane</strong>
+    </div>
+
+    <div class="aboutbox">
+      <span>Username</span>
+      <strong>ft.nirdesh</strong>
+    </div>
+
+    <div class="aboutbox">
+      <span>Interests</span>
+      <strong>Minecraft & Creating</strong>
+    </div>
+
+    <div class="aboutbox">
+      <span>Roles</span>
+      <strong>Owner · Creator · Gamer</strong>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="contact">
+  <h2 class="section-title">CONNECT</h2>
+
+  <div class="card">
+    <h3>LET'S CONNECT!</h3>
+
+    <p class="social-intro">
+      Follow my YouTube journey, join my community,
+      and become part of the DrawnMC adventure!
+    </p>
+
+    <div class="social-buttons">
+
+      <a class="btn youtube"
+         href="https://youtube.com/@nirdesh2255?si=RVOh4XCo_ufKnyMd"
+         target="_blank" rel="noopener noreferrer">
+        ▶ YOUTUBE
+      </a>
+
+      <a class="btn discord"
+         href="https://discord.gg/waUqtQZUGD"
+         target="_blank" rel="noopener noreferrer">
+        MY DISCORD
+      </a>
+
+      <a class="btn drawnmc"
+         href="https://discord.gg/snEZP7jxxT"
+         target="_blank" rel="noopener noreferrer">
+        DRAWNMC DISCORD
+      </a>
+
+      <a class="btn"
+         href="https://drawnmc.vercel.app/"
+         target="_blank" rel="noopener noreferrer">
+        DRAWNMC WEBSITE ↗
+      </a>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © <span id="year">2026</span> FT.NIRDESH<br>
+  MADE WITH CREATIVITY + MINECRAFT
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+</pre>
+        </body>
+    </html>
